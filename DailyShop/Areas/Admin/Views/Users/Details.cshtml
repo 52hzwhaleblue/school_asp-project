@@ -1,13 +1,13 @@
-﻿@model DailyShop.Areas.Admin.Models.User
+@model DailyShop.Areas.Admin.Models.User
 
 @{
     ViewData["Title"] = "Details";
 }
 <main class="app-content">
-    <h2>Details</h2>
+    <h2>Thông tin người dùng</h2>
 
     <div>
-        <h4>Users</h4>
+        
         <hr />
         <dl class="dl-horizontal">
             <dt>
@@ -61,8 +61,8 @@
         </dl>
     </div>
     <div>
-        <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-        <a asp-action="Index">Back to List</a>
+        <a asp-action="Edit" asp-route-id="@Model.Id">Chỉnh sửa</a> |
+        <a asp-action="Index">Quay lại</a>
     </div>
 
 </main>
