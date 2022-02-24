@@ -1,0 +1,219 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="bin\**" />
+    <Compile Remove="obj\**" />
+    <Content Remove="bin\**" />
+    <Content Remove="obj\**" />
+    <EmbeddedResource Remove="bin\**" />
+    <EmbeddedResource Remove="obj\**" />
+    <None Remove="bin\**" />
+    <None Remove="obj\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Carts\Index - Copy.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.12">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Shared\Error.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Views\Shared\_Layout.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Views\Shared\_ValidationScriptsPartial.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\_Footer.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Shared\_Footer.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\_Header.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\_Script.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\_Header.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\_Script.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\admin\js\bootstrap.min.js" />
+    <None Include="wwwroot\admin\js\color-picker.js" />
+    <None Include="wwwroot\admin\js\jquery-3.2.1.min.js" />
+    <None Include="wwwroot\admin\js\main.js" />
+    <None Include="wwwroot\admin\js\plugins\bootstrap-datepicker.min.js" />
+    <None Include="wwwroot\admin\js\plugins\bootstrap-notify.min.js" />
+    <None Include="wwwroot\admin\js\plugins\chart.js" />
+    <None Include="wwwroot\admin\js\plugins\dataTables.bootstrap.min.js" />
+    <None Include="wwwroot\admin\js\plugins\fullcalendar.min.js" />
+    <None Include="wwwroot\admin\js\plugins\jquery-ui.custom.min.js" />
+    <None Include="wwwroot\admin\js\plugins\jquery.dataTables.min.js" />
+    <None Include="wwwroot\admin\js\plugins\jquery.vmap.min.js" />
+    <None Include="wwwroot\admin\js\plugins\jquery.vmap.sampledata.js" />
+    <None Include="wwwroot\admin\js\plugins\jquery.vmap.world.js" />
+    <None Include="wwwroot\admin\js\plugins\moment.min.js" />
+    <None Include="wwwroot\admin\js\plugins\pace.min.js" />
+    <None Include="wwwroot\admin\js\plugins\select2.min.js" />
+    <None Include="wwwroot\admin\js\plugins\sweetalert.min.js" />
+    <None Include="wwwroot\admin\js\popper.min.js" />
+    <None Include="wwwroot\dailyShop\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\dailyShop\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\dailyShop\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\dailyShop\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\dailyShop\js\bootstrap.js" />
+    <None Include="wwwroot\dailyShop\js\custom.js" />
+    <None Include="wwwroot\dailyShop\js\jquery.simpleGallery.js" />
+    <None Include="wwwroot\dailyShop\js\jquery.simpleLens.js" />
+    <None Include="wwwroot\dailyShop\js\jquery.smartmenus.bootstrap.js" />
+    <None Include="wwwroot\dailyShop\js\jquery.smartmenus.js" />
+    <None Include="wwwroot\dailyShop\js\nouislider.js" />
+    <None Include="wwwroot\dailyShop\js\sequence-theme.modern-slide-in.js" />
+    <None Include="wwwroot\dailyShop\js\sequence.js" />
+    <None Include="wwwroot\dailyShop\js\slick.js" />
+    <None Include="wwwroot\dailyShop\scss\base\_base.scss" />
+    <None Include="wwwroot\dailyShop\scss\base\_mixins.scss" />
+    <None Include="wwwroot\dailyShop\scss\base\_variables.scss" />
+    <None Include="wwwroot\dailyShop\scss\layouts\_footer.scss" />
+    <None Include="wwwroot\dailyShop\scss\layouts\_header.scss" />
+    <None Include="wwwroot\dailyShop\scss\layouts\_nav.scss" />
+    <None Include="wwwroot\dailyShop\scss\modules\_buttons.scss" />
+    <None Include="wwwroot\dailyShop\scss\modules\_responsive.scss" />
+    <None Include="wwwroot\dailyShop\scss\modules\_sections.scss" />
+    <None Include="wwwroot\dailyShop\scss\modules\_typography.scss" />
+    <None Include="wwwroot\dailyShop\scss\style.scss" />
+    <None Include="wwwroot\login-form\css\.DS_Store" />
+    <None Include="wwwroot\login-form\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\login-form\fonts\.DS_Store" />
+    <None Include="wwwroot\login-form\fonts\icomoon\demo-files\demo.js" />
+    <None Include="wwwroot\login-form\fonts\icomoon\fonts\icomoon.svg" />
+    <None Include="wwwroot\login-form\images\.DS_Store" />
+    <None Include="wwwroot\login-form\js\bootstrap.min.js" />
+    <None Include="wwwroot\login-form\js\jquery-3.3.1.min.js" />
+    <None Include="wwwroot\login-form\js\main.js" />
+    <None Include="wwwroot\login-form\js\owl.carousel.min.js" />
+    <None Include="wwwroot\login-form\js\popper.min.js" />
+    <None Include="wwwroot\login-form\scss\.DS_Store" />
+    <None Include="wwwroot\login-form\scss\bootstrap\bootstrap-grid.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\bootstrap-reboot.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\bootstrap.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_alert.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_background-variant.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_badge.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_border-radius.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_box-shadow.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_breakpoints.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_buttons.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_caret.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_clearfix.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_deprecate.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_float.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_forms.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_gradients.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_grid-framework.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_grid.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_hover.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_image.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_list-group.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_lists.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_nav-divider.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_pagination.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_reset-text.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_resize.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_screen-reader.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_size.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_table-row.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_text-hide.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_text-truncate.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_transition.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\mixins\_visibility.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\utilities\_align.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\utilities\_background.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\utilities\_borders.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\utilities\_clearfix.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\utilities\_display.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\utilities\_embed.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\utilities\_flex.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\utilities\_float.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\utilities\_overflow.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\utilities\_position.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\utilities\_screenreaders.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\utilities\_shadows.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\utilities\_sizing.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\utilities\_spacing.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\utilities\_stretched-link.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\utilities\_text.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\utilities\_visibility.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\vendor\_rfs.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_alert.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_badge.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_breadcrumb.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_button-group.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_buttons.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_card.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_carousel.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_close.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_code.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_custom-forms.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_dropdown.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_forms.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_functions.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_grid.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_images.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_input-group.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_jumbotron.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_list-group.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_media.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_mixins.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_modal.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_nav.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_navbar.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_pagination.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_popover.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_print.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_progress.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_reboot.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_root.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_spinners.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_tables.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_toasts.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_tooltip.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_transitions.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_type.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_utilities.scss" />
+    <None Include="wwwroot\login-form\scss\bootstrap\_variables.scss" />
+    <None Include="wwwroot\login-form\scss\style.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\image\product\" />
+  </ItemGroup>
+
+</Project>
